@@ -20,4 +20,21 @@ public class SpreadSheet implements Table {
 		// TODO Auto-generated method stub
 		return 0;
 	}
+
+	@Override
+	public String getData(int row, int col) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String getLabel(int col) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
+	public String toString() {
+		return null;
+	}
 }
