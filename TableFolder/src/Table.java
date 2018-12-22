@@ -22,4 +22,8 @@ public interface Table {
 	// retrieve all of the data from this table
 	@Override
 	String toString();
+	
+	Table compareByRow(Table other);
+	
+	Table compareByColumn(TableOther);
 }
