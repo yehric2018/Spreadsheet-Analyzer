@@ -33,29 +33,36 @@ public class SpreadSheet implements Table {
 	@Override
 	public int getRowSize() {
 		// TODO Auto-generated method stub
-		return 0;
+		return data.length;
 	}
 
 	@Override
 	public int getColSize() {
 		// TODO Auto-generated method stub
-		return 0;
+		return data[0].length;
 	}
 
 	@Override
 	public String getData(int row, int col) {
 		// TODO Auto-generated method stub
-		return null;
+		return data[row][col];
 	}
 
 	@Override
 	public String getLabel(int col) {
 		// TODO Auto-generated method stub
-		return null;
+		return data[0][col];
 	}
 	
 	@Override
 	public String toString() {
-		return null;
+		String res = "";
+		for(int i = 0; i < getRowSize(); i++) {
+			for(int j = 0; j < getColSize(); j++) {
+				res += getData(i, j);
+			}
+			res += "\n";
+		}
+		return res;
 	}
 }
